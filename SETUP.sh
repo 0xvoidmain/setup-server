@@ -43,7 +43,7 @@ cp nginx-before-ssl.conf /etc/nginx/sites-enabled/default
 sudo systemctl restart nginx
 
 echo "-------- CREATE SSL CERTIFICATE --------"
-sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html -d domain
+sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html -d $domain
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 cp ssl-params.conf /etc/nginx/snippets/ssl-params.conf
 cp nginx.conf /etc/nginx/sites-enabled/default
