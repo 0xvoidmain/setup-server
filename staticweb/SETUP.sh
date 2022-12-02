@@ -31,3 +31,6 @@ sed -i "s/__DOMAIN__/$domain/" /etc/nginx/sites-enabled/default
 sudo systemctl restart nginx
 
 echo "-------- SETUP PROJECT ---------"
+
+# expand
+#letsencrypt certonly --expand -a webroot --webroot-path=/var/www/html -d vn.mollector.com -d cb3.mollector.com
