@@ -1,5 +1,6 @@
 domain=${1?param missing - domain.} 
-
+sudo apt update
+sudo apt install gh
 # INSTALL NODEJS
 echo "-------- INSTALL NODEJS --------"
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
