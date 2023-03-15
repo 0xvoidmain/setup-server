@@ -2,6 +2,7 @@ domain=${1?param missing - domain.}
 
 # INSTALL MONGODB
 # https://onecompiler.com/posts/3vchuyxuh/enabling-replica-set-in-mongodb-with-just-one-node
+# https://www.mongodb.com/docs/manual/tutorial/configure-scram-client-authentication/
 echo "-------- INSTALL MONGODB --------"
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
