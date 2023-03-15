@@ -60,3 +60,4 @@ sed -i "s/__DOMAIN__/$domain/" /etc/nginx/sites-enabled/default
 sudo systemctl restart nginx
 
 echo "-------- SETUP PROJECT ---------"
+gh auth login
