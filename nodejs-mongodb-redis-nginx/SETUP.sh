@@ -51,6 +51,8 @@ sudo apt-get install letsencrypt
 echo "-------- SETUP SSL --------"
 cp nginx-before-ssl.conf /etc/nginx/sites-enabled/default
 sudo systemctl restart nginx
+ufw allow 80
+ufw allow 443
 
 echo "-------- CREATE SSL CERTIFICATE --------"
 sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html -d $domain
