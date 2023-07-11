@@ -22,7 +22,7 @@ db.createUser(
 
         user: "admin",
 
-        pwd: "admin@d3v2023",
+        pwd: "yourpasshere",
 
         roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "root"]
 
