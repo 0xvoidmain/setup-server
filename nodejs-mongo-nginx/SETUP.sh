@@ -2,7 +2,7 @@ domain=${1?param missing - domain.}
 
 # INSTALL NODEJS
 echo "-------- INSTALL NODEJS --------"
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
